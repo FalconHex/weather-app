@@ -7,7 +7,7 @@ const forecast = require('./utils/forecast')
 console.log(__dirname);
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 2000;
 
 
 // !SETTING UP PATHS
@@ -45,7 +45,7 @@ app.get('', (req, res) => {
 
     res.render('index', {
         title: 'WEATHER',
-        name:'Joyal'
+        name:'Shubham'
     })
 })
 
@@ -57,7 +57,7 @@ app.get('/about', (req, res) => {
 
     res.render('about', {
         title: 'ABOUT',
-        name: 'Joyal',
+        name: 'Shubham',
         form:'hbs'
     })
 })
@@ -70,7 +70,7 @@ app.get('/help', (req, res) => {
 
     res.render('help', {
         title: 'HELP',
-        name: 'Joyal',
+        name: 'Shubham',
         msg:'Hello how can I help you?'
     })
 })
@@ -159,7 +159,7 @@ app.get('/help/*',(req,res) => {
     res.render('error',{
         title: '404 ERROR',
         msg: 'Help content not found!',
-        name: 'Joyal'
+        name: 'Shubham'
     })
 })
 
@@ -168,7 +168,7 @@ app.get('/help/*',(req,res) => {
 app.get('*', (req,res) => {
     res.render('error',{
         title: '404 ERROR',
-        msg: 'Page not found!',
+        msg: 'error',
         name: 'Joyal'
     })
 })
