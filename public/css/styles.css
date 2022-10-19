@@ -18,8 +18,8 @@ body {
 
 footer {
     color: #888886;
-    border-top: 1px solid #eeeeee;
-    margin-top: 16px;
+    border-top: 3px solid #eeeeee;
+    margin-top: 20px;
     padding: 16px 0;
 }
 
@@ -30,12 +30,12 @@ header {
 
 h1 {
 
-    font-size: 56px;
-    margin-bottom: 16px;
+    font-size: 64px;
+    margin-bottom: 12px;
 }
 
 header a {
-    color: #888886;
+    color: #868886;
     margin-right: 16px;
     text-decoration: none;
 }
